@@ -12,6 +12,7 @@ const tools = [
   "Looker Studio",
   "Microsoft Fabric",
   "Google Colab",
+  "Tableau",
 ]
 
 export default function TechStack() {
