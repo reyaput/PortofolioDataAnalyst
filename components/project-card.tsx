@@ -24,14 +24,26 @@ export default function ProjectCard({ project }: { project: any }) {
         </div>
       </div>
 
-      <div className="mt-auto inline-flex items-center text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors">
-        Code
-        <ArrowUpRight size={16} className="ml-2" />
-      </div>
+      <div className="mt-auto flex gap-3">
+        <a 
+          href={project.codeLink || "#"} 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center text-sm font-medium text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+        >
+          Code
+          <ArrowUpRight size={16} className="ml-2" />
+        </a>
 
-      <div className="flex items-center text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors">
-        View Case Study
-        <ArrowUpRight size={16} className="ml-2" />
+        <a 
+          href={project.projectLink || "#"} 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center text-sm font-medium text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+        >
+          View Project
+          <ArrowUpRight size={16} className="ml-2" />
+        </a>
       </div>
     </div>
   )

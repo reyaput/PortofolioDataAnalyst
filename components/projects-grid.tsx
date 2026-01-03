@@ -69,35 +69,35 @@ export default function ProjectsGrid({ data }: ProjectsGridProps) {
                 </div>
 
                 {/* --- 2. Link Section (Footer Card) --- */}
-                {/* Hanya render jika projectLink diisi di Sanity */}
-                {project.projectLink && (
-                  <div className="mt-auto pt-2 border-t border-border/50">
+                <div className="mt-auto pt-4 border-t border-border/50 flex flex-wrap gap-3">
+                  
+                  {/* Tombol View Project (Primary / Solid) */}
+                  {project.projectLink && (
                     <a 
                       href={project.projectLink}
-                      target="_blank" // Buka di tab baru
-                      rel="noopener noreferrer" // Keamanan
-                      className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="inline-flex flex-1 items-center justify-center gap-2 px-4 py-2 text-sm font-medium bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors"
                     >
                       View Project 
-                      <ExternalLink size={14} />
+                      <ExternalLink size={16} />
                     </a>
-                  </div>
-                )}
+                  )}
 
-                {/* Hanya render jika githubLink diisi di Sanity */}
-                {project.githubLink && (
-                  <div className="mt-2">
+                  {/* Tombol Code / GitHub (Secondary / Outline) */}
+                  {project.githubLink && (
                     <a 
                       href={project.githubLink}
-                      target="_blank" // Buka di tab baru
-                      rel="noopener noreferrer" // Keamanan
-                      className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="inline-flex flex-1 items-center justify-center gap-2 px-4 py-2 text-sm font-medium border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-md transition-colors"
                     >
                       Code 
-                      <Github size={14} />
+                      <Github size={16} />
                     </a>
-                  </div>
-                )}
+                  )}
+
+                </div>
               </div>
             </div>
           ))}
