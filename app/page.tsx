@@ -16,6 +16,7 @@ export interface Project {
   impact: string;
   tags: string[];
   projectLink: string;
+  githubLink: string;
 }
 
 export interface Experience {
@@ -31,7 +32,7 @@ export interface Experience {
 // 2. Fungsi Fetch Data dari Sanity
 async function getData() {
   const projectsQuery = `*[_type == "project"] | order(publishedAt desc) {
-    _id, title, slug, mainImage, impact, tags, projectLink
+    _id, title, slug, mainImage, impact, tags, projectLink, githubLink
   }`;
   
   const experienceQuery = `*[_type == "experience"] | order(startDate desc) {

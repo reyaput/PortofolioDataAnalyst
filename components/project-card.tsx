@@ -24,6 +24,11 @@ export default function ProjectCard({ project }: { project: any }) {
         </div>
       </div>
 
+      <div className="mt-auto inline-flex items-center text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors">
+        Code
+        <ArrowUpRight size={16} className="ml-2" />
+      </div>
+
       <div className="flex items-center text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors">
         View Case Study
         <ArrowUpRight size={16} className="ml-2" />

@@ -84,6 +84,20 @@ export default function ProjectsGrid({ data }: ProjectsGridProps) {
                   </div>
                 )}
 
+                {/* Hanya render jika githubLink diisi di Sanity */}
+                {project.githubLink && (
+                  <div className="mt-2">
+                    <a 
+                      href={project.githubLink}
+                      target="_blank" // Buka di tab baru
+                      rel="noopener noreferrer" // Keamanan
+                      className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+                    >
+                      Code 
+                      <Github size={14} />
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           ))}

@@ -51,6 +51,11 @@ export default defineType({
       type: 'url',
     }),
     defineField({
+      name: 'githubLink',
+      title: 'GitHub Repository Link',
+      type: 'url',
+    }),
+    defineField({
       name: 'publishedAt',
       title: 'Published at',
       type: 'date',
