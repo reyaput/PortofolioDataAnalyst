@@ -41,7 +41,7 @@ export default function ProjectCard({ project }: { project: any }) {
           rel="noopener noreferrer"
           className="flex items-center text-sm font-medium text-muted-foreground hover:text-primary transition-colors cursor-pointer"
         >
-          View Project
+          View Chart
           <ArrowUpRight size={16} className="ml-2" />
         </a>
       </div>
