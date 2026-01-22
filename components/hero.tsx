@@ -1,10 +1,8 @@
 "use client"
 
-import { ArrowRight, Download } from "lucide-react"
+import { ArrowRight, Eye } from "lucide-react" // Ubah import 'Download' jadi 'Eye'
 import Link from "next/link"
 import Image from "next/image"
-// Nanti uncomment baris di bawah ini jika sudah siap pakai gambar asli
-// import Image from "next/image"
 
 export default function Hero() {
   return (
@@ -30,68 +28,46 @@ export default function Hero() {
                 View Projects
                 <ArrowRight size={18} />
               </Link>
+              
+              {/* === TOMBOL YANG DIEDIT === */}
               <a
                 href="/CV_ReynandaAryaPutra.pdf"
-                download="CV_ReynandaAryaPutra.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 border border-border px-6 py-3 rounded-lg font-medium hover:bg-muted transition-colors"
               >
-                <Download size={18} />
-                Download Resume
+                <Eye size={18} /> {/* Icon diganti jadi Eye (Mata) */}
+                Preview Resume
               </a>
+              {/* ========================== */}
+              
             </div>
           </div>
 
           {/* === PROFILE AVATAR SECTION === */}
           <div className="flex-1 flex justify-center md:justify-end">
-            {/* Container Lingkaran Luar (Gradient Ring) - Ukuran responsif di sini */}
             <div className="relative w-48 h-48 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-muted to-muted-foreground p-1 flex-shrink-0">
               
-              {/* ========================================= */}
-              {/* VERSI MOBILE (Tampil di HP, Sembunyi di Desktop) */}
-              {/* Perhatikan class: block md:hidden */}
-              {/* ========================================= */}
+              {/* VERSI MOBILE */}
               <div className="w-full h-full rounded-full bg-background flex items-center justify-center border-2 border-border overflow-hidden block md:hidden relative">
-                 {/* CONTOH Placeholder Mobile */}
                   <Image
                     src="/fototerbaru.jpg"
                     alt="Profile Mobile"
-                    fill                           // Agar gambar mengisi penuh lingkaran parent-nya
-                    className="object-cover"       // Agar gambar tidak gepeng/terdistorsi (crop otomatis)
-                    priority                       // Opsional: Agar loading lebih cepat karena ini di Hero section
+                    fill
+                    className="object-cover"
+                    priority
                   />
-                 {/* NANTI GANTI DENGAN INI KALAU SUDAH ADA GAMBAR ASLI:
-                 <Image 
-                   src="/foto-mobile.jpg" // Pastikan foto ada di folder public
-                   alt="Profile Mobile"
-                   fill
-                   className="object-cover"
-                 /> 
-                 */}
               </div>
 
-              {/* ========================================= */}
-              {/* VERSI DESKTOP (Sembunyi di HP, Tampil di Desktop) */}
-              {/* Perhatikan class: hidden md:block */}
-              {/* ========================================= */}
+              {/* VERSI DESKTOP */}
               <div className="w-full h-full rounded-full bg-background flex items-center justify-center border-2 border-border overflow-hidden hidden md:block relative">
-                {/* CONTOH Placeholder Desktop */}
                 <Image 
                   src="/fototerbaru.jpg" 
                   alt="Profile Desktop"
-                  fill                           // Agar gambar mengisi penuh lingkaran parent-nya
-                  className="object-cover"       // Agar gambar tidak gepeng/terdistorsi (crop otomatis)
-                  priority                       // Opsional: Agar loading lebih cepat karena ini di Hero section
+                  fill
+                  className="object-cover"
+                  priority
                 />
-                {/* NANTI GANTI DENGAN INI KALAU SUDAH ADA GAMBAR ASLI:
-                 <Image 
-                   src="/foto-desktop.jpg" // Foto berbeda di folder public
-                   alt="Profile Desktop"
-                   fill
-                   className="object-cover"
-                 /> 
-                 */}
               </div>
             </div>
           </div>
