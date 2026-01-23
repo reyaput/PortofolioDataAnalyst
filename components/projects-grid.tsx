@@ -79,7 +79,7 @@ export default function ProjectsGrid({ data }: ProjectsGridProps) {
                       rel="noopener noreferrer" 
                       className="inline-flex flex-1 items-center justify-center gap-2 px-4 py-2 text-sm font-medium bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors"
                     >
-                      View Project 
+                      View Chart 
                       <ExternalLink size={16} />
                     </a>
                   )}
