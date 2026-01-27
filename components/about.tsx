@@ -79,23 +79,10 @@ export default function About({ id = "about", data }: AboutProps) {
             <h3 className="text-xl font-semibold mb-8">About Me</h3>
             <div className="space-y-6 text-sm text-muted-foreground leading-relaxed">
               <p>
-                Saya adalah mahasiswa Ilmu Komputer tingkat akhir di Universitas Negeri Jakarta dengan 
-                ketertarikan pada digital marketing dan pengolahan data. Saya aktif mengembangkan 
-                diri melalui berbagai kegiatan, mulai dari magang, organisasi, seminar dan bootcamp di bidang 
-                data dan teknologi.
+                Sebagai mahasiswa tingkat akhir Ilmu Komputer di Universitas Negeri Jakarta, saya memiliki fokus mendalam untuk menjembatani kesenjangan antara teknologi, pengolahan data, dan strategi bisnis. Saya tidak hanya melihat data sebagai angka, tetapi sebagai fondasi utama dalam pengambilan keputusan strategis. Berbekal kemampuan teknis dalam Python (Pandas, Scikit-Learn), SQL, dan Machine Learning, saya telah berhasil membangun model prediksi bisnis dengan akurasi tinggi serta dashboard visualisasi menggunakan Power BI, Tableau, dan Looker Studio untuk mempermudah pemantauan kinerja.
               </p>
               <p>
-                Ketertarikan saya pada data mendorong saya untuk terus mempelajari bagaimana data 
-                dapat digunakan sebagai dasar pengambilan keputusan. Saya memiliki pengalaman 
-                mengolah data, menyusun laporan dan dashboard, serta memahami metrik kinerja untuk 
-                mengevaluasi efektivitas strategi. Saya juga terbiasa beradaptasi dengan tools dan teknologi 
-                baru yang mendukung analisis dan automasi proses.
-              </p>
-              <p>
-                Dalam portofolio saya sebagai Digital Marketing & Data Enthusiast, saya mempunyai 
-                berbagai proyek yang menggabungkan strategi pemasaran dengan analitik data, seperti 
-                pembangunan dashboard performa, tracking metrik kampanye, serta pengembangan tools 
-                sederhana untuk mendukung reporting dan pengambilan insight.
+                Pengalaman saya tidak berhenti tentang coding, saya juga terjun langsung ke dunia Digital Marketing dengan pendekatan berbasis data. Saya pernah mengelola strategi kampanye KOL yang sukses menghasilkan total 3.3 juta views, membuktikan bahwa gabungan antara intuisi pemasaran dan analisis data yang akurat dapat menciptakan dampak nyata. Saya adalah pembelajar cepat yang selalu antusias mengadopsi teknologi baru untuk efisiensi operasional. Temukan detail proyek analisis dan studi kasus.
               </p>
             </div>
           </div>
